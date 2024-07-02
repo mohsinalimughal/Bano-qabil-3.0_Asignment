@@ -109,14 +109,73 @@
 
 
    
-# ---------Programming Challenges----------------
+# ----------------------------Programming Challenges-------------------------------
 
 # 1.Find the Median of Three Numbers:
 
-numbers = ("Enter three numbers separated by space:")
-list1 = numbers.split()
-median = sum(list1)
-print(median)
+# numbers = ("Enter three numbers separated by space:")
+# list1 = numbers.split()
+# median = sum(list1)
+# print(median)
 
+#  2. Count the Number of Words in a Sentence:
 
+# sentence = input("Enter a sentence:")
+# count = sentence.count(" ")
+# print("Number of words:",count+1)
 
+#  3. Calculate the Sum of Digits in a Number:
+
+# numbers = input("Enter a number:")
+# list1 = []
+# for digits in numbers:
+#     list1.append(int(digits))
+#     continue
+# sum1 = sum(list1)
+# print(sum1)
+
+#  4. Find the Longest Common Prefix in a List of Strings:
+
+# string1 = input("Enter strings separated by space:")
+
+# 5 . Check if a Number is a Prime Number:
+
+# import math
+# number = int(input("Enter number :"))
+# def is_prime(number):
+#     if number < 2:
+#         return False
+#     for i in range(2, math.isqrt(number) + 1):
+#         if number % i == 0:
+#             return False
+#     return True
+
+# if is_prime(number):
+#     print(f"{number} is a prime number.")
+# else:
+#     print(f"{number} is not a prime number.")
+
+# ------------------------Bonus------------------------------
+
+#  6. Find the Longest Consecutive Sequence in a List of Integers:
+
+# input1 = input("Enter integers separated by space:")
+# list1 = input1.split(" ")
+# nums = []
+# for numbers in list1:
+#     nums.append(int(numbers))
+#     continue
+# print(nums)
+# def longestConsecutive(nums):
+#     numset = set(nums)
+#     highest_count = 0
+#     for i in nums:
+#         if i - 1 not in numset:
+#             count = 0
+#             while i + count in numset:
+#                 count += 1
+#             highest_count = max(highest_count, count)
+#     return highest_count
+
+# result = longestConsecutive(nums)
+# print(f"Length of the Longest consecutive subsequence: {result}")
